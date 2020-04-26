@@ -1,0 +1,233 @@
+header{
+    height: 1.226667rem;
+    background-color: #fa3432;
+    font-size: .373333rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .346667rem;
+    padding-right: .346667rem;
+}
+
+header span{
+    color: #ffffff;
+}
+
+header .iconfont{
+    font-size: .426667rem;
+    color: #ffffff;
+}
+
+/*----------------*/
+
+.top{
+    height: 2.96rem;
+    background: linear-gradient(to bottom,#ff3c01,#d80607);
+    text-align: center;
+}
+
+.top h1{
+    padding-top: .666667rem;
+    font-size: .906667rem;
+    color: #ffffff;
+}
+
+.top p{
+    padding-top: .56rem;
+    color: #ffffff;
+    font-size: .4rem;
+}
+/*-------------*/
+
+.content{
+    height: 1.066667rem;
+    border-bottom: .026667rem solid #f1f0f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.content span{
+    width: 50%;
+    font-size: .4rem;
+    color: #777777;
+    text-align: center;
+}
+
+.content :first-child{
+    border-bottom: 2px solid #F2F2F2;
+}
+
+/*-----------*/
+
+.main ul{
+    width: 6.4rem;
+    height: 2.03rem;
+    margin: .4rem auto 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: url("../img/detail_icon_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.main ul li{
+    width: 50%;
+    height: .55rem;
+    line-height: .55rem;
+    color: #ffc166;
+    font-size: .24rem;
+    text-align: center;
+}
+.main ul li .iconfont{
+    display: inline-block;
+    width: .55rem;
+    height: .55rem;
+    font-size: .26rem;
+    border: 3px solid #f5f5f4;
+    border-radius: 50%;
+    margin-right: .13rem;
+}
+
+/*------active start----*/
+
+.active{
+    width: 100%;
+    margin-top: 1.333333rem;
+}
+
+.activemain{
+    position: relative;
+    width: 90%;
+    height: .2rem;
+    border-radius: .1rem;
+    background-color: #f0f0f0;
+    margin: .5rem auto 0px;
+}
+
+.activeone{
+    width: 37%;
+    height: .2rem;
+    border-radius: .1rem;
+    background-color: #FB0502;
+}
+
+.activetwo{
+    width: .8rem;
+    height: .426667rem;
+    background-color: #FB0502;
+    text-align: center;
+    font-size: .346667rem;
+    color: #fff;
+    line-height: .426667rem;
+    position: absolute;
+    bottom: .533333rem;
+    left: 2.9rem;
+}
+.active .activeback{
+    width: 0;
+    height: 0;
+    border: .133333rem solid transparent;
+    border-top: .133333rem solid #FB0502;
+    position: absolute;
+    top: .48rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.active .activethree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .293333rem;
+    color: #808088;
+    margin: .266667rem .5rem 0px;
+}
+
+.active .activethree a{
+    color: red;
+}
+
+/*-------------*/
+
+.link{
+    position: absolute;
+    bottom: 1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link p{
+    font-size: .293333rem;
+    color: #808088;
+}
+
+footer{
+    height: 1.4rem;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: .026667rem solid #e0e0e0;
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer :first-child{
+    font-size: .426667rem;
+    color: #ff9900;
+    margin-left: .48rem;
+    line-height: 1.4rem;
+    text-decoration: underline;
+}
+
+footer :last-child{
+    width: 6.893333rem;
+    height: 1.093333rem;
+    background-color: #fa3432;
+    font-size: .426667rem;
+    color: #f0f0f0;
+    text-align: center;
+    line-height: 1.093333rem;
+    margin: .173333rem;
+}
+
+
+/* -------- 蒙版 */
+.mask{
+    /* 没有设置参考点，就以body作为参考点 */
+    /* 下面的5行代码就保证这个盒子完全盖住了手机屏幕 */
+    position: absolute;
+    /* top: 0; */
+    top: .92rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+
+    /*  默认是隐藏掉了 */
+    display: none; 
+}
+.mask .nav{
+    background-color: #fff;
+    height: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mask .nav a{
+    color: #f00;
+    font-size: .28rem;
+    width: 25%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+.mask .nav a .iconfont{
+    display: block;
+    font-size: .4rem;
+    margin: 0 auto;
+}
+.mask .nav a:last-child{
+    border-right: none;
+}
